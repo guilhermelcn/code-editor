@@ -1,5 +1,9 @@
 # handlebars
 
+## Download dependicies
+```
+yarn
+```
 ## Project setup
 ```
 yarn install

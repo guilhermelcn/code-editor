@@ -1,13 +1,15 @@
 {
-  "name": "handlebars",
-  "version": "0.1.0",
+  "name": "code_mirror_and_handlebars",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "codemirror": "^5.51.0",
     "core-js": "^3.6.4",
+    "handlebars": "^4.7.3",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"
   },
