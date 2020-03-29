@@ -57,7 +57,7 @@ export default {
       timeout: null,
       templateCompile: null,
       compiledTemplate: null,
-      templateIp: `
+      template: `
 <body style="margin: 0; padding: 0;">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
@@ -150,9 +150,9 @@ export default {
   },
   methods: {
     settingInitialTemplate() {
-      this.templateCompile =  Handlebars.compile(this.templateIp);
+      this.templateCompile =  Handlebars.compile(this.template);
       
-      document.getElementById('code').innerHTML = this.templateIp;
+      document.getElementById('code').innerHTML = this.template;
       
       document.getElementById('preview').innerHTML = this.compiledTemplate;
 
@@ -188,7 +188,7 @@ export default {
     this.settingInitialTemplate();
   },
   created() {
-    this.templateCompile =  Handlebars.compile(this.templateIp);
+    this.templateCompile =  Handlebars.compile(this.template);
     this.compiledTemplate = this.templateCompile(enumVariables);
   }
 }
